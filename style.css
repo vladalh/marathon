@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.title {
+    font-size: 48px;
+    height: 69px;
+    margin-bottom: 0px;
+}
+
+.birth-info {
+    margin-top: 0px;
+    height: 51px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 24px;
+}
+a {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+}
+article {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    box-shadow: 0 0 6px -2px #000, 0 0 45px -20px #000;
+    color: #fff;
+    line-height: 90px;
+    transform: perspective(300px) rotateY(0deg);
+    transition: transform 0.4s linear, background-color 0s linear 0.2s, color 0s linear 0.2s;
+}
+a:hover article {
+    transform: perspective(300px) rotateY(180deg);
+    color: #eee;
+    transition: transform 0.2s linear, background-color 0s linear 0.1s, color 0s linear 0.1s;
+}
+  a:nth-child(1):hover article {
+    background-color: #3B5998;
+}
+  a:nth-child(2):hover article {
+    background-color: #00ACED;
+}
+  a:nth-child(3):hover article {
+    background-color: #2C4762;
+}
+  a:nth-child(4):hover article {
+    background-color: #CB2027;
+}
+  a:nth-child(5):hover article {
+    background-color: #1769FF;
+}
+  a:nth-child(6):hover article {
+    background-color: #4183C4;
+}
+  a:nth-child(7):hover article {
+    background-color: #3399CC;
+}
+  a:nth-child(8):hover article {
+    background-color: #EA4C89;
+}
+  a:nth-child(9):hover article {
+    background-color: #3F729B;
+}
+  a:nth-child(10):hover article {
+    background-color: #FF0084;
+}
+  a:nth-child(11):hover article {
+    background-color: #F26300;
+}
+  a:nth-child(12):hover article {
+    background-color: #445566;
+}
+span {
+    transition: transform 0s linear 0.2s, text-shadow 0s linear 0.2s;
+    display: block;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-smoothing: antialiased;
+}
+a:hover span {
+    transition: transform 0s linear 0.1s, text-shadow 0s linear 0.1s;
+    transform: scale(-1, 1);
+    text-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+}
+.socials {
+    width: 250px;
+    height: 100px;
+}
+.social-fb:hover {
+    position: relative;
+    bottom: 5px;    
+}
+.social-in:hover {
+    position: relative;
+    bottom: 5px;
+}
+.social-tw:hover {
+    position: relative;
+    bottom: 5px;
+}
+
+socials-item {
+    text-decoration: none;
+}
+@font-face {
+    font-family: "SSSocial";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2361/ss-social-regular.eot");
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2361/ss-social-regular.eot?#iefix") format("embedded-opentype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2361/ss-social-regular.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2361/ss-social-regular.ttf") format("truetype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2361/ss-social-regular.svg#SSSocialRegular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+.education {
+    margin-left: 5px;
+}
+
+.info-position {
+    color: #ff3232;
+}
+
+.container {    
+    margin-top: 64px;
+}
+.main {
+    display: flex;
+    margin-bottom: 87px;
+}
+
+.aside {
+    width: 310px;
+    height: 700px;
+    background-color: #1A142D;
+    color: #FFFFFF;  
+    padding: 18px;
+    box-sizing: border-box;
+    margin-right: 67px;
+    text-align: center;
+    margin-left: 57px;
+}
+
+.content {
+    width: 467px;
+    height: 299px;
+}  
+
+.paragraph {
+    margin-top: 0px;
+}
+
+ul {
+    padding: 0;
+    margin-left: 20px;
+}
+
+.avatar {
+    width: 100%;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;   
+}
+
+.gallery {
+    display: flex;
+}
+
+.gallery-item {
+    position: relative;
+    width: 206px;
+    height: 206px;
+    margin-left: 57px;
+    margin-bottom: 59px;
+}
+
+
+.gallery-item:hover .gallery-label {
+    display: block;
+}
+
+.gallery-label {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    padding: 6px;
+    background-color: #1A142D;
+    font-size: 12px;
+    color: white;  
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
